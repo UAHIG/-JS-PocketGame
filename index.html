@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+<audio src="./audio/159339__jackjan__handgun-clip-in.m4a" preload="auto"></audio>
+<audio src="./audio/683098__florianreichelt__click.mp3" preload="auto"></audio>
+<audio src="./audio/5e2bd22afcca601.mp3" preload="auto"></audio>
+<audio src="./audio/winnermelody.mp3" preload="auto"></audio>
+<audio class="audio" src="./audio/516010__enviromaniac2__super-mario-bros-theme-techno-loop.mp3" preload="auto"></audio>
+  <title>Пятнашки</title>
+</head>
+<body>
+  <div class="container">
+    <div class="head-buttons-container">
+      <div class="burger-button" id="burgerBtn"></div>
+      <div class="score-button" id="scoreBtn"></div>
+      <div class="refresh-button" id="refreshBtn"></div> 
+      <div class="cnock-button" id="cnockBtn"></div>  
+    </div>
+    <h3 class="rules-button">Игра в Пятнашки :)</h3>
+    <div class="game-field">
+      <button class="chip" data-field="1">
+        <span class="chip-num">1</span>
+      </button>
+      <button class="chip" data-field="2">
+        <span class="chip-num">2</span>
+      </button>
+      <button class="chip" data-field="3">
+        <span class="chip-num">3</span>
+      </button>
+      <button class="chip" data-field="4">
+        <span class="chip-num">4</span>
+      </button>
+      <button class="chip" data-field="5">
+        <span class="chip-num">5</span>
+      </button>
+      <button class="chip" data-field="6">
+        <span class="chip-num">6</span>
+      </button>
+      <button class="chip" data-field="7">
+        <span class="chip-num">7</span>
+      </button>
+      <button class="chip" data-field="8">
+        <span class="chip-num">8</span>
+      </button>
+      <button class="chip" data-field="9">
+        <span class="chip-num">9</span>
+      </button>
+      <button class="chip" data-field="10">
+        <span class="chip-num">10</span>
+      </button>
+      <button class="chip" data-field="11">
+        <span class="chip-num">11</span>
+      </button>
+      <button class="chip" data-field="12">
+        <span class="chip-num">12</span>
+      </button>
+      <button class="chip" data-field="13">
+        <span class="chip-num">13</span>
+      </button>
+      <button class="chip" data-field="14">
+        <span class="chip-num">14</span>
+      </button>
+      <button class="chip" data-field="15">
+        <span class="chip-num">15</span>
+      </button>
+      <button class="chip" data-field="16">
+        <span class="chip-num">16</span>
+      </button>
+      <div class="burger-menu">
+        <div class="regulate-container">
+          <div class="regulate-picture speed"></div>
+          <div class="regulate-level">
+            <input type="range" min="0" max="100" value="50" class="slider0">
+          </div>         
+        </div>
+        <div class="regulate-container">
+          <div class="regulate-picture sound"></div>
+          <div class="regulate-level">
+            <input type="range" min="0" max="100" value="50" class="slider1">
+          </div>          
+        </div>
+        <div class="regulate-container">
+          <div class="regulate-picture light"></div>
+          <div class="regulate-level">
+            <input type="range" min="10" max="100" value="55" class="slider2">
+          </div>          
+        </div>
+        <div class="palette">
+          <button class="tool" data-color="#c00"></button>
+          <button class="tool" data-color="#f70"></button>
+          <button class="tool" data-color="#fc0"></button>
+          <button class="tool" data-color="#0c0"></button>
+          <button class="tool" data-color="#0ee"></button>
+          <button class="tool" data-color="#169"></button>
+          <button class="tool" data-color="#909"></button>
+          <button class="tool" data-color="#f5f5f5"></button>
+          <button class="tool" data-color="#879"></button>
+          <button class="tool" data-color="#8B4517"></button> 
+        </div>
+        <div class="color-container">
+          <label for="background">Back</label>
+          <input type="radio" id="background" name="radioGroup" value="gameContainer">
+
+          <label for="chips">Chip</label>
+          <input type="radio" id="chips" name="radioGroup" value="chipsArr">
+
+          <label for="text">Field</label>
+          <input type="radio" id="game_ield" name="radioGroup" value="gameFieldContainer">
+        </div>
+      </div>  
+      <div class="burger-menu-rules">
+        <div class="rules">
+          <ul class="eng">
+            <li>The goal of the game is to arrange the tiles by moving them across the field so that they are in order (from 1 to 15), with the empty cell located in the bottom right corner of the field.</li>
+            <li>Tiles can be moved by shifting them into the empty cell. To do this, click on a tile that is adjacent to the empty cell, and it will take the place of the empty cell.</li>
+            <li>The game ends when all the tiles are arranged in the correct order, and the empty cell is in the bottom right corner of the field.</li>
+            <li>The player can shuffle the tiles by clicking the "START" button.</li>
+          </ul>
+          <ul class="rus">
+            <li>Цель игры - упорядочить фишки, двигая их по полю так, чтобы они стали упорядочены по порядку (от 1 до 15), а пустая клетка находилась в нижнем правом углу поля.</li>
+            <li>Фишки можно двигать, сдвигая их в пустую клетку. Для этого кликните на фишку, находящуюся рядом с пустой клеткой, и она займет место пустой клетки.</li>
+            <li>Игра заканчивается, когда все фишки упорядочены по порядку, и пустая клетка находится в нижнем правом углу поля.</li>
+            <li>Игрок может перемешать фишки, нажав на кнопку "START".</li>
+          </ul>
+        </div>
+      </div> 
+      <div class="win-field">
+      </div> 
+      <div class="score-field">
+        <div class="score-container">
+          <ul class="score-list"></ul>
+        </div>
+      </div> 
+
+    </div>
+    <div class="start-game-container">
+      <div class="time">
+        <div class="title-time">Clock:</div>
+        <div class="score" id="clock">00:00</div>
+      </div>
+      <button class="shuffle">START</button>
+      <div class="time">
+        <div class="title-time">Round Time:</div>
+        <div class="score" id="timer">00:00</div>
+      </div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-line"></div>
+        <div class="footer-rss">
+          <p>2023</p>
+          <a class="adn-link rs" href="https://rs.school/js-stage0/" target="_blank">
+            <img class="rsimg" src="./assets/rs_school_js.svg" alt="The Rolling Scopes School">
+          </a>
+          <p>
+            <a class="adn-link" href="https://github.com/UAHIG" target="_blank">Igor Golosnyy</a>
+          </p>
+        </div>
+      </div>
+    </footer> 
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
